@@ -1,0 +1,20 @@
+CRITICAL - 2025-04-16 02:34:21 --> TypeError: App\Models\UserModel::updateUserDataByID(): Return value must be of type bool, none returned
+[Method: POST, Route: admin/users/update]
+in APPPATH\Models\UserModel.php on line 143.
+ 1 APPPATH\Controllers\Users.php(254): App\Models\UserModel->updateUserDataByID(4, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Users->updateUser()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-16 02:49:54 --> ErrorException: Undefined array key "name"
+[Method: GET, Route: login/loginWithGoogle]
+in APPPATH\Controllers\Login.php on line 160.
+ 1 APPPATH\Controllers\Login.php(160): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "name"', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Login.php', 160)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

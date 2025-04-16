@@ -1,0 +1,444 @@
+CRITICAL - 2025-04-14 01:30:43 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: GET, Route: login/chooseusertype]
+in SYSTEMPATH\Session\Session.php on line 283.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\system\\Session\\Session.php', 283)
+ 2 SYSTEMPATH\Session\Session.php(283): ini_set('session.name', 'ci_sessions')
+ 3 SYSTEMPATH\Session\Session.php(232): CodeIgniter\Session\Session->configure()
+ 4 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 6 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 9 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('session')
+11 SYSTEMPATH\Common.php(973): service('session')
+12 APPPATH\Controllers\Login.php(80): session()
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseUserType()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 01:31:00 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: GET, Route: login/chooseusertype]
+in SYSTEMPATH\Session\Session.php on line 283.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\system\\Session\\Session.php', 283)
+ 2 SYSTEMPATH\Session\Session.php(283): ini_set('session.name', 'ci_sessions')
+ 3 SYSTEMPATH\Session\Session.php(232): CodeIgniter\Session\Session->configure()
+ 4 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 6 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 9 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('session')
+11 SYSTEMPATH\Common.php(973): service('session')
+12 APPPATH\Controllers\Login.php(80): session()
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseUserType()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 01:31:01 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: GET, Route: login/chooseusertype]
+in SYSTEMPATH\Session\Session.php on line 283.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\system\\Session\\Session.php', 283)
+ 2 SYSTEMPATH\Session\Session.php(283): ini_set('session.name', 'ci_sessions')
+ 3 SYSTEMPATH\Session\Session.php(232): CodeIgniter\Session\Session->configure()
+ 4 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 6 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 9 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 SYSTEMPATH\Common.php(1000): CodeIgniter\Config\BaseService::get('session')
+11 SYSTEMPATH\Common.php(973): service('session')
+12 APPPATH\Controllers\Login.php(80): session()
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseUserType()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 01:31:04 --> ErrorException: ini_set(): Session ini settings cannot be changed after headers have already been sent
+[Method: GET, Route: login/index]
+in SYSTEMPATH\Session\Session.php on line 283.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'ini_set(): Session ini settings cannot be changed after headers have already been sent', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\system\\Session\\Session.php', 283)
+ 2 SYSTEMPATH\Session\Session.php(283): ini_set('session.name', 'ci_sessions')
+ 3 SYSTEMPATH\Session\Session.php(232): CodeIgniter\Session\Session->configure()
+ 4 SYSTEMPATH\Config\Services.php(710): CodeIgniter\Session\Session->start()
+ 5 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::session(Object(Config\Session), false)
+ 6 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic('session', [...])
+ 7 SYSTEMPATH\Config\Services.php(668): CodeIgniter\Config\BaseService::getSharedInstance('session', null)
+ 8 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::session()
+ 9 APPPATH\Controllers\Login.php(26): CodeIgniter\Config\BaseService::__callStatic('session', [])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 01:32:46 --> ErrorException: Array to string conversion
+[Method: GET, Route: login/chooseusertype]
+in APPPATH\Controllers\Login.php on line 86.
+ 1 APPPATH\Controllers\Login.php(86): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Login.php', 86)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseUserType()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 01:43:25 --> ErrorException: Undefined variable $userModel
+[Method: GET, Route: login/loginWithGoogle]
+in APPPATH\Controllers\Login.php on line 140.
+ 1 APPPATH\Controllers\Login.php(140): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $userModel', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Login.php', 140)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 02:24:00 --> ErrorException: Undefined variable $data
+[Method: GET, Route: errors/unauthorized]
+in APPPATH\Controllers\Error.php on line 11.
+ 1 APPPATH\Controllers\Error.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Error.php', 11)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Error->unauthorized()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Error))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 02:24:26 --> TypeError: App\Controllers\Error::unauthorized(): Return value must be of type string, none returned
+[Method: GET, Route: errors/unauthorized]
+in APPPATH\Controllers\Error.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Error->unauthorized()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Error))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 03:33:29 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "height="
+[Method: GET, Route: login/height=]
+in SYSTEMPATH\Router\Router.php on line 739.
+ 1 SYSTEMPATH\Router\Router.php(207): CodeIgniter\Router\Router->checkDisallowedChars('login/height=')
+ 2 SYSTEMPATH\CodeIgniter.php(832): CodeIgniter\Router\Router->handle('login/height=')
+ 3 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 04:45:10 --> Error: Call to undefined method CodeIgniter\Security\Security::xssClean()
+[Method: GET, Route: login/chooseType/0]
+in APPPATH\Controllers\Login.php on line 200.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 04:47:27 --> Error: Call to undefined method CodeIgniter\Security\Security::xssClean()
+[Method: GET, Route: login/chooseType/0]
+in APPPATH\Controllers\Login.php on line 200.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 04:55:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "choose_type.php"
+[Method: GET, Route: login/chooseType/0]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('choose_type.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('choose_type', [], true)
+ 3 APPPATH\Controllers\Login.php(214): view('choose_type')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:12:35 --> InvalidArgumentException: missing the required client identifier
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 701.
+ 1 FCPATH\vendor\google\apiclient\src\Google\Client.php(364): Google\Auth\OAuth2->buildFullAuthorizationUri([...])
+ 2 APPPATH\Controllers\Login.php(61): Google_Client->createAuthUrl()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:12:38 --> InvalidArgumentException: missing the required client identifier
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 701.
+ 1 FCPATH\vendor\google\apiclient\src\Google\Client.php(364): Google\Auth\OAuth2->buildFullAuthorizationUri([...])
+ 2 APPPATH\Controllers\Login.php(61): Google_Client->createAuthUrl()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:12:40 --> InvalidArgumentException: missing the required client identifier
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 701.
+ 1 FCPATH\vendor\google\apiclient\src\Google\Client.php(364): Google\Auth\OAuth2->buildFullAuthorizationUri([...])
+ 2 APPPATH\Controllers\Login.php(61): Google_Client->createAuthUrl()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:12:43 --> InvalidArgumentException: missing the required client identifier
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 701.
+ 1 FCPATH\vendor\google\apiclient\src\Google\Client.php(364): Google\Auth\OAuth2->buildFullAuthorizationUri([...])
+ 2 APPPATH\Controllers\Login.php(61): Google_Client->createAuthUrl()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:15:14 --> Error: Class "App\Controllers\Google_Service_Oauth2" not found
+[Method: GET, Route: login/loginWithGoogle]
+in APPPATH\Controllers\Login.php on line 124.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:17:40 --> Error: Class "App\Controllers\Google_Service_Oauth2" not found
+[Method: GET, Route: login/loginWithGoogle]
+in APPPATH\Controllers\Login.php on line 125.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-14 05:32:53 --> mysqli_sql_exception: Unknown column 'role' in 'field list' in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `users` ...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` ...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` ...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `users` ...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\app\Models\UserModel.php(24): CodeIgniter\Database\BaseBuilder->update(Array)
+#5 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Login.php(287): App\Models\UserModel->updateUserData(Array, '113158547791363...')
+#6 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-14 05:32:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'role' in 'field list'
+[Method: GET, Route: login/chooseType/0]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `role` = :role:, `updated_at` = :updated_at:
+WHERE `oauth_id` = :oauth_id:', [...], false)
+ 2 APPPATH\Models\UserModel.php(24): CodeIgniter\Database\BaseBuilder->update([...])
+ 3 APPPATH\Controllers\Login.php(287): App\Models\UserModel->updateUserData([...], '113158547791363557626')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:32:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'role' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `role` = \'3\', `updated_at` = \'2025-04-14 05:32:53\'
+WHERE `oauth_id` = \'113158547791363557626\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `role` = \'3\', `updated_at` = \'2025-04-14 05:32:53\'
+WHERE `oauth_id` = \'113158547791363557626\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `role` = :role:, `updated_at` = :updated_at:
+WHERE `oauth_id` = :oauth_id:', [...], false)
+ 4 APPPATH\Models\UserModel.php(24): CodeIgniter\Database\BaseBuilder->update([...])
+ 5 APPPATH\Controllers\Login.php(287): App\Models\UserModel->updateUserData([...], '113158547791363557626')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 05:32:53 --> [Caused by] mysqli_sql_exception: Unknown column 'role' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `users` SET `role` = \'3\', `updated_at` = \'2025-04-14 05:32:53\'
+WHERE `oauth_id` = \'113158547791363557626\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `users` SET `role` = \'3\', `updated_at` = \'2025-04-14 05:32:53\'
+WHERE `oauth_id` = \'113158547791363557626\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `users` SET `role` = \'3\', `updated_at` = \'2025-04-14 05:32:53\'
+WHERE `oauth_id` = \'113158547791363557626\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `users` SET `role` = :role:, `updated_at` = :updated_at:
+WHERE `oauth_id` = :oauth_id:', [...], false)
+ 5 APPPATH\Models\UserModel.php(24): CodeIgniter\Database\BaseBuilder->update([...])
+ 6 APPPATH\Controllers\Login.php(287): App\Models\UserModel->updateUserData([...], '113158547791363557626')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->chooseType('0')
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:03:50 --> ErrorException: Undefined variable $session
+[Method: GET, Route: facilitator]
+in APPPATH\Controllers\Facilitator.php on line 10.
+ 1 APPPATH\Controllers\Facilitator.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facilitator.php', 10)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:04:09 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: facilitator]
+in APPPATH\Controllers\Facilitator.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:04:24 --> ErrorException: Undefined property: App\Controllers\Facilitator::$userModel
+[Method: GET, Route: facilitator]
+in APPPATH\Controllers\Facilitator.php on line 16.
+ 1 APPPATH\Controllers\Facilitator.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Facilitator::$userModel', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facilitator.php', 16)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:32:08 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:32:30 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:32:30 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:32:50 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:32:50 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:32:51 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:33:06 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:33:07 --> ErrorException: Undefined variable $current_name
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Views\shared\dashboard_sidenav.php on line 136.
+ 1 APPPATH\Views\shared\dashboard_sidenav.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $current_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php', 136)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_sidenav.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_sidenav', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(48): view('shared/dashboard_sidenav', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:56:59 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 13.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-14 07:57:16 --> ErrorException: Undefined property: App\Controllers\Admin::$userModel
+[Method: GET, Route: admin]
+in APPPATH\Controllers\Admin.php on line 20.
+ 1 APPPATH\Controllers\Admin.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Admin::$userModel', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Admin.php', 20)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

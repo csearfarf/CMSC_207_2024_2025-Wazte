@@ -1,0 +1,316 @@
+CRITICAL - 2025-04-08 06:59:41 --> ErrorException: require_once(C:\xampp\htdocs\207\project_code\wazte\app\libraries/vendor/autoload.php): Failed to open stream: No such file or directory
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 11.
+ 1 APPPATH\Controllers\Login.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'require_once(C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\libraries/vendor/autoload.php): Failed to open stream: No such file or directory', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Login.php', 11)
+ 2 APPPATH\Controllers\Login.php(11): require_once()
+ 3 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 4 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:01:36 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:02:25 --> Error: Class "App\Controllers\UserModel" not found
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:03:16 --> Error: Class "Google_Client" not found
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:03:44 --> Error: Class "Google_Client" not found
+[Method: GET, Route: login]
+in APPPATH\Controllers\Login.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Login->__construct()
+ 2 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:04:41 --> InvalidArgumentException: Redirect URI must be absolute
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 805.
+ 1 FCPATH\vendor\google\auth\src\OAuth2.php(363): Google\Auth\OAuth2->setRedirectUri('Put Your Redirect Uri')
+ 2 FCPATH\vendor\google\apiclient\src\Google\Client.php(1012): Google\Auth\OAuth2->__construct([...])
+ 3 FCPATH\vendor\google\apiclient\src\Google\Client.php(1001): Google_Client->createOAuth2Service()
+ 4 FCPATH\vendor\google\apiclient\src\Google\Client.php(362): Google_Client->getOAuth2Service()
+ 5 APPPATH\Controllers\Login.php(28): Google_Client->createAuthUrl()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:04:43 --> InvalidArgumentException: Redirect URI must be absolute
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 805.
+ 1 FCPATH\vendor\google\auth\src\OAuth2.php(363): Google\Auth\OAuth2->setRedirectUri('Put Your Redirect Uri')
+ 2 FCPATH\vendor\google\apiclient\src\Google\Client.php(1012): Google\Auth\OAuth2->__construct([...])
+ 3 FCPATH\vendor\google\apiclient\src\Google\Client.php(1001): Google_Client->createOAuth2Service()
+ 4 FCPATH\vendor\google\apiclient\src\Google\Client.php(362): Google_Client->getOAuth2Service()
+ 5 APPPATH\Controllers\Login.php(28): Google_Client->createAuthUrl()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:05:24 --> InvalidArgumentException: Redirect URI must be absolute
+[Method: GET, Route: login]
+in FCPATH\vendor\google\auth\src\OAuth2.php on line 805.
+ 1 FCPATH\vendor\google\auth\src\OAuth2.php(363): Google\Auth\OAuth2->setRedirectUri('login')
+ 2 FCPATH\vendor\google\apiclient\src\Google\Client.php(1012): Google\Auth\OAuth2->__construct([...])
+ 3 FCPATH\vendor\google\apiclient\src\Google\Client.php(1001): Google_Client->createOAuth2Service()
+ 4 FCPATH\vendor\google\apiclient\src\Google\Client.php(362): Google_Client->getOAuth2Service()
+ 5 APPPATH\Controllers\Login.php(28): Google_Client->createAuthUrl()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:06:11 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "login.php"
+[Method: GET, Route: login]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('login.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('login', [], true)
+ 3 APPPATH\Controllers\Login.php(29): view('login', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:23:54 --> InvalidArgumentException: Invalid code
+[Method: GET, Route: login/loginWithGoogle]
+in FCPATH\vendor\google\apiclient\src\Google\Client.php on line 207.
+ 1 APPPATH\Controllers\Login.php(45): Google_Client->fetchAccessTokenWithAuthCode(null)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-08 07:26:04 --> mysqli_sql_exception: Table 'wazte.user' doesn't exist in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\app\Models\UserModel.php(13): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Login.php(55): App\Models\UserModel->isAlreadyRegister('112770834549442...')
+#6 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-08 07:26:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'wazte.user' doesn't exist
+[Method: GET, Route: login/loginWithGoogle]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `oauth_id` = :oauth_id:', [...], false)
+ 2 APPPATH\Models\UserModel.php(13): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\Login.php(55): App\Models\UserModel->isAlreadyRegister('112770834549442323056')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:26:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'wazte.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `oauth_id` = \'112770834549442323056\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `oauth_id` = \'112770834549442323056\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `oauth_id` = :oauth_id:', [...], false)
+ 4 APPPATH\Models\UserModel.php(13): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 5 APPPATH\Controllers\Login.php(55): App\Models\UserModel->isAlreadyRegister('112770834549442323056')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:26:04 --> [Caused by] mysqli_sql_exception: Table 'wazte.user' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `user`
+WHERE `oauth_id` = \'112770834549442323056\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `user`
+WHERE `oauth_id` = \'112770834549442323056\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `user`
+WHERE `oauth_id` = \'112770834549442323056\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1787): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `user`
+WHERE `oauth_id` = :oauth_id:', [...], false)
+ 5 APPPATH\Models\UserModel.php(13): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 6 APPPATH\Controllers\Login.php(55): App\Models\UserModel->isAlreadyRegister('112770834549442323056')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:30:52 --> GuzzleHttp\Exception\ClientException: Client error: `POST https://oauth2.googleapis.com/token` resulted in a `400 Bad Request` response:
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+
+[Method: GET, Route: login/loginWithGoogle]
+in FCPATH\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php on line 113.
+ 1 FCPATH\vendor\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 FCPATH\vendor\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 FCPATH\vendor\guzzlehttp\guzzle\src\Client.php(124): GuzzleHttp\Promise\Promise->wait()
+11 FCPATH\vendor\google\auth\src\HttpHandler\Guzzle6HttpHandler.php(47): GuzzleHttp\Client->send(Object(GuzzleHttp\Psr7\Request), [...])
+12 FCPATH\vendor\google\auth\src\OAuth2.php(551): Google\Auth\HttpHandler\Guzzle6HttpHandler->__invoke(Object(GuzzleHttp\Psr7\Request))
+13 FCPATH\vendor\google\apiclient\src\Google\Client.php(215): Google\Auth\OAuth2->fetchAuthToken(Object(Google\Auth\HttpHandler\Guzzle7HttpHandler))
+14 APPPATH\Controllers\Login.php(45): Google_Client->fetchAccessTokenWithAuthCode('4/0Ab_5qlkBAyl66g-UAoHaTC91sQg9DcYSDYET8Se8oGFxFJ6GcmfBMEo4M_7sW4zLtSUUgw')
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+16 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:31:43 --> ErrorException: Undefined variable $table
+[Method: GET, Route: login/loginWithGoogle]
+in APPPATH\Models\UserModel.php on line 13.
+ 1 APPPATH\Models\UserModel.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $table', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Models\\UserModel.php', 13)
+ 2 APPPATH\Controllers\Login.php(55): App\Models\UserModel->isAlreadyRegister('112770834549442323056')
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-08 07:33:04 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roleID`) REFERENCES `roles` (`role_ID`)) in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `us...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `us...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `us...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\app\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Login.php(73): App\Models\UserModel->insertUserData(Array)
+#6 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-04-08 07:33:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roleID`) REFERENCES `roles` (`role_ID`))
+[Method: GET, Route: login/loginWithGoogle]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (:oauth_id:, :name:, :email:, :profile_img:, :created_at:)', [...], false)
+ 2 APPPATH\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Login.php(73): App\Models\UserModel->insertUserData([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:33:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roleID`) REFERENCES `roles` (`role_ID`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (\'112770834549442323056\', \'Paolo Cse\', \'pro.ties20@gmail.com\', \'https://lh3.googleusercontent.com/a/ACg8ocIfC2EpIQjVnxvjI1q3ZEHBX93cIx9YyqRdsBY2pZ3Gsznp1Q=s96-c\', \'2025-04-08 07:33:04\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (\'112770834549442323056\', \'Paolo Cse\', \'pro.ties20@gmail.com\', \'https://lh3.googleusercontent.com/a/ACg8ocIfC2EpIQjVnxvjI1q3ZEHBX93cIx9YyqRdsBY2pZ3Gsznp1Q=s96-c\', \'2025-04-08 07:33:04\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (:oauth_id:, :name:, :email:, :profile_img:, :created_at:)', [...], false)
+ 4 APPPATH\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\Login.php(73): App\Models\UserModel->insertUserData([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:33:04 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`users`, CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roleID`) REFERENCES `roles` (`role_ID`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (\'112770834549442323056\', \'Paolo Cse\', \'pro.ties20@gmail.com\', \'https://lh3.googleusercontent.com/a/ACg8ocIfC2EpIQjVnxvjI1q3ZEHBX93cIx9YyqRdsBY2pZ3Gsznp1Q=s96-c\', \'2025-04-08 07:33:04\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (\'112770834549442323056\', \'Paolo Cse\', \'pro.ties20@gmail.com\', \'https://lh3.googleusercontent.com/a/ACg8ocIfC2EpIQjVnxvjI1q3ZEHBX93cIx9YyqRdsBY2pZ3Gsznp1Q=s96-c\', \'2025-04-08 07:33:04\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (\'112770834549442323056\', \'Paolo Cse\', \'pro.ties20@gmail.com\', \'https://lh3.googleusercontent.com/a/ACg8ocIfC2EpIQjVnxvjI1q3ZEHBX93cIx9YyqRdsBY2pZ3Gsznp1Q=s96-c\', \'2025-04-08 07:33:04\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `users` (`oauth_id`, `name`, `email`, `profile_img`, `created_at`) VALUES (:oauth_id:, :name:, :email:, :profile_img:, :created_at:)', [...], false)
+ 5 APPPATH\Models\UserModel.php(19): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\Login.php(73): App\Models\UserModel->insertUserData([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:40:23 --> GuzzleHttp\Exception\ClientException: Client error: `POST https://oauth2.googleapis.com/token` resulted in a `400 Bad Request` response:
+{
+  "error": "invalid_grant",
+  "error_description": "Bad Request"
+}
+
+[Method: GET, Route: login/loginWithGoogle]
+in FCPATH\vendor\guzzlehttp\guzzle\src\Exception\RequestException.php on line 113.
+ 1 FCPATH\vendor\guzzlehttp\guzzle\src\Middleware.php(72): GuzzleHttp\Exception\RequestException::create(Object(GuzzleHttp\Psr7\Request), Object(GuzzleHttp\Psr7\Response), null, [], null)
+ 2 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(209): GuzzleHttp\Middleware::GuzzleHttp\{closure}(Object(GuzzleHttp\Psr7\Response))
+ 3 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(158): GuzzleHttp\Promise\Promise::callHandler(1, Object(GuzzleHttp\Psr7\Response), null)
+ 4 FCPATH\vendor\guzzlehttp\promises\src\TaskQueue.php(52): GuzzleHttp\Promise\Promise::GuzzleHttp\Promise\{closure}()
+ 5 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(251): GuzzleHttp\Promise\TaskQueue->run(true)
+ 6 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(227): GuzzleHttp\Promise\Promise->invokeWaitFn()
+ 7 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(272): GuzzleHttp\Promise\Promise->waitIfPending()
+ 8 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(229): GuzzleHttp\Promise\Promise->invokeWaitList()
+ 9 FCPATH\vendor\guzzlehttp\promises\src\Promise.php(69): GuzzleHttp\Promise\Promise->waitIfPending()
+10 FCPATH\vendor\guzzlehttp\guzzle\src\Client.php(124): GuzzleHttp\Promise\Promise->wait()
+11 FCPATH\vendor\google\auth\src\HttpHandler\Guzzle6HttpHandler.php(47): GuzzleHttp\Client->send(Object(GuzzleHttp\Psr7\Request), [...])
+12 FCPATH\vendor\google\auth\src\OAuth2.php(551): Google\Auth\HttpHandler\Guzzle6HttpHandler->__invoke(Object(GuzzleHttp\Psr7\Request))
+13 FCPATH\vendor\google\apiclient\src\Google\Client.php(215): Google\Auth\OAuth2->fetchAuthToken(Object(Google\Auth\HttpHandler\Guzzle7HttpHandler))
+14 APPPATH\Controllers\Login.php(45): Google_Client->fetchAccessTokenWithAuthCode('4/0Ab_5qlmSuMaoq46Vuz6pzWPWELwQcJyJn9Pmu0iNrJj0XxkvIFqvkZOg-vRCVMnl02UZOg')
+15 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Login->loginWithGoogle()
+16 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+17 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+18 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+19 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+20 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-08 07:45:30 --> ErrorException: Undefined variable $googleButton
+[Method: GET, Route: /]
+in APPPATH\Views\welcome_message.php on line 35.
+ 1 APPPATH\Views\welcome_message.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $googleButton', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\welcome_message.php', 35)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\welcome_message.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 5 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
