@@ -7,6 +7,7 @@ use Config\Services;
 class Admin extends BaseController
 {
     protected $userModel;
+    protected $materialModel;
     protected $loggedUser;
     protected $oauthId;
     protected $currentName;
@@ -17,6 +18,8 @@ class Admin extends BaseController
     {
         // Instantiate the UserModel.
         $this->userModel = new \App\Models\UserModel();
+        // Instantiate the UserModel.
+        $this->materialModel = new \App\Models\MaterialModel();
     }
 
     /**
@@ -29,8 +32,8 @@ class Admin extends BaseController
     private function loadUserDetails()
     {
         $session = Services::session();
-        $this->loggedUser  = $session->get("LoggedUserData");
-        $this->oauthId     = isset($this->loggedUser['oauth_id']) ? $this->loggedUser['oauth_id'] : null;
+        $this->loggedUser = $session->get("LoggedUserData");
+        $this->oauthId = isset($this->loggedUser['oauth_id']) ? $this->loggedUser['oauth_id'] : null;
         $this->currentName = isset($this->loggedUser['name']) ? $this->loggedUser['name'] : null;
 
         // Only attempt to get role if OAuth ID is available.
@@ -56,13 +59,13 @@ class Admin extends BaseController
         // Check if the user is logged in.
         if ($this->oauthId !== null) {
             $output = view('shared/dashboard_header')
-                    . view('shared/dashboard_sidenav', [
-                        'role'         => $this->role,
-                        'current_name' => $this->currentName,
-                        'rolename'     => $this->rolename
-                    ])
-                    . view('admin/dashboard/index')
-                    . view('shared/dashboard_footer');
+                . view('shared/dashboard_sidenav', [
+                    'role' => $this->role,
+                    'current_name' => $this->currentName,
+                    'rolename' => $this->rolename
+                ])
+                . view('admin/dashboard/index')
+                . view('shared/dashboard_footer');
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {
@@ -79,17 +82,28 @@ class Admin extends BaseController
      */
     public function facility()
     {
+
+        $googlekey = getenv('GOOGLE_MAPS_API_KEY');
+
         $this->loadUserDetails();
 
+
+        //fetch materials in MaterialModel
+        $materials = $this->materialModel->getMaterials();
+
         if ($this->oauthId !== null) {
-            $output = view('shared/dashboard_header')
-                    . view('shared/dashboard_sidenav', [
-                        'role'         => $this->role,
-                        'current_name' => $this->currentName,
-                        'rolename'     => $this->rolename
-                    ])
-                    . view('admin/facility/index')
-                    . view('shared/dashboard_footer');
+            $output = view('shared/dashboard_header', [
+                'googlekey' => $googlekey
+            ])
+                . view('shared/dashboard_sidenav', [
+                    'role' => $this->role,
+                    'current_name' => $this->currentName,
+                    'rolename' => $this->rolename
+                ])
+                . view('admin/facility/index', [
+                    'materials' => $materials
+                ])
+                . view('shared/dashboard_footer');
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {
@@ -110,13 +124,13 @@ class Admin extends BaseController
 
         if ($this->oauthId !== null) {
             $output = view('shared/dashboard_header')
-                    . view('shared/dashboard_sidenav', [
-                        'role'         => $this->role,
-                        'current_name' => $this->currentName,
-                        'rolename'     => $this->rolename
-                    ])
-                    . view('admin/users/index')
-                    . view('shared/dashboard_footer');
+                . view('shared/dashboard_sidenav', [
+                    'role' => $this->role,
+                    'current_name' => $this->currentName,
+                    'rolename' => $this->rolename
+                ])
+                . view('admin/users/index')
+                . view('shared/dashboard_footer');
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {

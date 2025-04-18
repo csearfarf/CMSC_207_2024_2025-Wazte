@@ -8,7 +8,7 @@
                     <img src=" <?= base_url('public/front/assets/img/front_logo.png') ?>" height="60" class="mr-3" alt="Footer logo">
                 </div>
                 <div class="p-2">
-                    <a  target="_blank"
+                    <a  href="<?= base_url('navigate') ?>"
                         class="btn btn-md btn-secondary animate-up-2 text-white"><i class="fas fa-paper-plane mr-2"></i>
                         Locate
                         Facilities</a>

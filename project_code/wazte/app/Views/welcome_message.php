@@ -24,12 +24,12 @@
                 <div class="row justify-content-center mb-5">
                     <div class="col-12 col-sm-8 col-md-7 col-lg-6 text-center">
                         <img src="<?= base_url('public/front/assets/img/front_logo.png') ?>" class="mb-4" height="180" alt="Logo Impact">
-                        <h1 class="display-4 text-muted mb-5 font-weight-normal"> Navigating Waste into Sustainable
-                            Opportunities.</h1>
+                       
+                        <h2 class=" text-muted mb-3 font-weight-bold">Waste and Zone Tracking Engine</h2>
+                        <p class=" text-muted mb-5 font-weight-normal"> Navigating Waste into Sustainable
+                            Opportunities.</p>
 
-                        <a href="https://www.creative-tim.com/product/impact-design-system-pro" target="_blank"
-                            class="btn btn-md btn-secondary animate-up-2"><i class="fas fa-paper-plane mr-2"></i> Locate
-                            Facilities</a>
+                      
 
                     </div>
                 </div>

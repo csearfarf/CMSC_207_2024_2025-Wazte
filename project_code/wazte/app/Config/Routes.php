@@ -7,8 +7,6 @@ use CodeIgniter\Router\RouteCollection;
  */
 $routes->get('/', 'Login::index');
 $routes->get('/login', 'Login::index');
-$routes->get('/home/properties', 'Home::properties');
-$routes->get('/home/materialTypes', 'Home::materialTypes');
 $routes->get('/login/loginWithGoogle', 'Login::loginWithGoogle');
 $routes->get('/login/index', 'Login::index');
 $routes->get('/login/logout', 'Login::logout');
@@ -16,7 +14,7 @@ $routes->get('/login/logout', 'Login::logout');
 
 
 // Admin Authenticated role route list  
-$routes->group('admin', ['filter' => 'roleCheck:1'], function($routes) {
+$routes->group('admin', ['filter' => 'roleCheck:1'], function ($routes) {
     $routes->get('/', 'Admin::index');
     $routes->get('index', 'Admin::index');
     $routes->get('users', 'Admin::users');
@@ -29,7 +27,7 @@ $routes->group('admin', ['filter' => 'roleCheck:1'], function($routes) {
     $routes->post('users/update', 'Users::updateUser'); // update user endpoint
 });
 
-$routes->group('facilitator', ['filter' => 'roleCheck:2'], function($routes) {
+$routes->group('facilitator', ['filter' => 'roleCheck:2'], function ($routes) {
     $routes->get('/', 'Facilitator::index');
     $routes->get('index', 'Facilitator::index');
     $routes->get('facility', 'Facilitator::facility');
@@ -38,7 +36,7 @@ $routes->group('facilitator', ['filter' => 'roleCheck:2'], function($routes) {
 
 
 // User Authenticated role route list  
-$routes->group('user', ['filter' => 'roleCheck:3'], function($routes) {
+$routes->group('user', ['filter' => 'roleCheck:3'], function ($routes) {
     $routes->get('/', 'User::index');
 });
 
@@ -48,12 +46,21 @@ $routes->get('/login/chooseType/(:num)', 'Login::chooseType/$1');
 
 
 // Facilitator Authenticated role route list  
-$routes->group('undecided', ['filter' => 'roleCheck:4'], function($routes) {
-   
+$routes->group('navigate', ['filter' => 'roleCheck:4'], function ($routes) {
+    $routes->get('/', 'Navigate::index');
+    $routes->get('index', 'Navigate::index');
+    $routes->get('materialTypes', 'Navigate::materialTypes');
+
+});
+
+// Facility functio with role 1 & 2 
+
+$routes->group('facility', ['filter' => 'roleCheck:1,2'], function ($routes) {
+    // New POST endpoint for saving
+    $routes->post('saveNewfacility', 'Facility::createNewFacility');
 });
 
 
-$routes->get('/login/dump', 'Login::dump');
 
 
 
@@ -61,6 +68,8 @@ $routes->get('/errors/unauthorized', 'Error::unauthorized');
 
 
 /**
- * Facilitator Routes`
+ * Override eerror page`
  */
+
+$routes->set404Override('App\Controllers\Error::unauthorized');
 

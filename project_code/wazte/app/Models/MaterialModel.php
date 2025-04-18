@@ -1,4 +1,5 @@
-<?php namespace App\Models;
+<?php
+namespace App\Models;
 
 use CodeIgniter\Model;
 
@@ -11,6 +12,6 @@ class MaterialModel extends Model
     // Returns materials with an alias for the name column
     public function getMaterials()
     {
-        return $this->select('Material as name, icon')->findAll();
+        return $this->select('tags_id as id,Material as name, icon')->findAll();
     }
 }
