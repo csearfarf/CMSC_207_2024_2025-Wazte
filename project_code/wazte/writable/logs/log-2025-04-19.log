@@ -1,0 +1,773 @@
+CRITICAL - 2025-04-19 03:52:13 --> CodeIgniter\Validation\Exceptions\ValidationException: "array" is not a valid rule.
+[Method: POST, Route: facility/saveEditFacility]
+in SYSTEMPATH\Validation\Validation.php on line 346.
+ 1 SYSTEMPATH\Validation\Validation.php(346): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound('array')
+ 2 SYSTEMPATH\Validation\Validation.php(202): CodeIgniter\Validation\Validation->processRules('materials', 'materials', [...], [...], [...], 'materials')
+ 3 SYSTEMPATH\Controller.php(138): CodeIgniter\Validation\Validation->run()
+ 4 APPPATH\Controllers\Facility.php(116): CodeIgniter\Controller->validate([...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->saveEditFacility()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 04:30:49 --> ErrorException: Undefined variable $googlekey
+[Method: GET, Route: facilitator]
+in APPPATH\Views\shared\dashboard_header.php on line 59.
+ 1 APPPATH\Views\shared\dashboard_header.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $googlekey', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_header', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(58): view('shared/dashboard_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 04:32:18 --> ErrorException: Undefined property: App\Controllers\Facilitator::$materialModel
+[Method: GET, Route: facilitator/facility]
+in APPPATH\Controllers\Facilitator.php on line 91.
+ 1 APPPATH\Controllers\Facilitator.php(91): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Facilitator::$materialModel', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facilitator.php', 91)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->facility()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 04:42:10 --> Error: Call to undefined method App\Controllers\Facility::failValidation()
+[Method: POST, Route: facility/saveNewfacility]
+in APPPATH\Controllers\Facility.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->createNewFacility()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 04:42:20 --> Error: Call to undefined method App\Controllers\Facility::failValidation()
+[Method: POST, Route: facility/saveNewfacility]
+in APPPATH\Controllers\Facility.php on line 39.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->createNewFacility()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:49:43 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:49:44 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:49:45 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:49:51 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:30 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:30 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:32 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:40 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:41 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:44 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:49 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:50:52 --> Error: Class "App\Controllers\SciSessionsModel" not found
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 182.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:52:02 --> Error: Call to undefined method App\Controllers\Admin::sciSessionsModel()
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 185.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:52:04 --> Error: Call to undefined method App\Controllers\Admin::sciSessionsModel()
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 185.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:52:07 --> Error: Call to undefined method App\Controllers\Admin::sciSessionsModel()
+[Method: GET, Route: admin/dashboard/recent]
+in APPPATH\Controllers\Admin.php on line 185.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 07:59:59 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_id...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-19 07:59:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'field list'
+[Method: GET, Route: admin/dashboard/recent]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:59:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 07:59:59 --> [Caused by] mysqli_sql_exception: Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 08:00:15 --> mysqli_sql_exception: Unknown column 'user_id' in 'field list' in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_id...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-19 08:00:15 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'field list'
+[Method: GET, Route: admin/dashboard/recent]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 08:00:15 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 08:00:15 --> [Caused by] mysqli_sql_exception: Unknown column 'user_id' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_id`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_id`
+ORDER BY `last_login_ts` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 08:00:41 --> mysqli_sql_exception: Unknown column 'user_ID' in 'field list' in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_ID...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_ID...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_ID...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-19 08:00:41 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_ID' in 'field list'
+[Method: GET, Route: admin/dashboard/recent]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 08:00:41 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_ID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 08:00:41 --> [Caused by] mysqli_sql_exception: Unknown column 'user_ID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 08:00:46 --> mysqli_sql_exception: Unknown column 'user_ID' in 'field list' in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_ID...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_ID...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_ID...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-19 08:00:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_ID' in 'field list'
+[Method: GET, Route: admin/dashboard/recent]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 08:00:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'user_ID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 08:00:46 --> [Caused by] mysqli_sql_exception: Unknown column 'user_ID' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `user_ID`, MAX(timestamp) as last_login_ts
+FROM `ci_sessions`
+GROUP BY `user_ID`
+ORDER BY `last_login_ts` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\Admin.php(188): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->recentSessions()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 11:23:59 --> mysqli_sql_exception: Table 'wazte.inquiry_messages' doesn't exist in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Inquiry.php(77): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+#10 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-19 11:23:59 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'wazte.inquiry_messages' doesn't exist
+[Method: POST, Route: inquiry/send]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (:inquiry_ID:, :message:, :sender_ID:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Inquiry.php(77): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 11:23:59 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'wazte.inquiry_messages' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:23:59\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:23:59\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (:inquiry_ID:, :message:, :sender_ID:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Inquiry.php(77): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 11:23:59 --> [Caused by] mysqli_sql_exception: Table 'wazte.inquiry_messages' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:23:59\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:23:59\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:23:59\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `inquiry_messages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (:inquiry_ID:, :message:, :sender_ID:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Inquiry.php(77): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 11:24:39 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`inquirymessages`, CONSTRAINT `inquirymessages_ibfk_1` FOREIGN KEY (`inquiry_ID`) REFERENCES `inquiries` (`inquiry_ID`)) in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `in...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `in...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `in...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `in...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(839): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(800): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Inquiry.php(77): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+#10 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-04-19 11:24:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`inquirymessages`, CONSTRAINT `inquirymessages_ibfk_1` FOREIGN KEY (`inquiry_ID`) REFERENCES `inquiries` (`inquiry_ID`))
+[Method: POST, Route: inquiry/send]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (:inquiry_ID:, :message:, :sender_ID:, :timestamp:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\Inquiry.php(77): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 11:24:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`inquirymessages`, CONSTRAINT `inquirymessages_ibfk_1` FOREIGN KEY (`inquiry_ID`) REFERENCES `inquiries` (`inquiry_ID`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:24:39\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:24:39\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (:inquiry_ID:, :message:, :sender_ID:, :timestamp:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\Inquiry.php(77): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 11:24:39 --> [Caused by] mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`wazte`.`inquirymessages`, CONSTRAINT `inquirymessages_ibfk_1` FOREIGN KEY (`inquiry_ID`) REFERENCES `inquiries` (`inquiry_ID`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:24:39\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:24:39\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (\'\', \'test\', \'4\', \'2025-04-19 11:24:39\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2345): CodeIgniter\Database\BaseConnection->query('INSERT INTO `inquirymessages` (`inquiry_ID`, `message`, `sender_ID`, `timestamp`) VALUES (:inquiry_ID:, :message:, :sender_ID:, :timestamp:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(839): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(800): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\Inquiry.php(77): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 12:47:45 --> Error: Class "App\Controllers\UsersModel" not found
+[Method: GET, Route: navigate/wazteList]
+in APPPATH\Controllers\Facility.php on line 240.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilitiesForUsers()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 12:48:30 --> mysqli_sql_exception: Unknown column 'users.id' in 'where clause' in C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\207\project_code\wazte\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\207\project_code\wazte\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\207\project_code\wazte\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\207\project_code\wazte\system\BaseModel.php(609): CodeIgniter\Model->doFind(true, '2')
+#6 C:\xampp\htdocs\207\project_code\wazte\app\Controllers\Facility.php(249): CodeIgniter\BaseModel->find('2')
+#7 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(933): App\Controllers\Facility->listFacilitiesForUsers()
+#8 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+#9 C:\xampp\htdocs\207\project_code\wazte\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\207\project_code\wazte\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp\htdocs\207\project_code\wazte\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+CRITICAL - 2025-04-19 12:48:30 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.id' in 'where clause'
+[Method: GET, Route: navigate/wazteList]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '2')
+ 4 APPPATH\Controllers\Facility.php(249): CodeIgniter\BaseModel->find('2')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilitiesForUsers()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 12:48:30 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'users.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`id` = \'2\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '2')
+ 6 APPPATH\Controllers\Facility.php(249): CodeIgniter\BaseModel->find('2')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilitiesForUsers()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 12:48:30 --> [Caused by] mysqli_sql_exception: Unknown column 'users.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `users`
+WHERE `users`.`id` = \'2\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `users`
+WHERE `users`.`id` = \'2\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `users`
+WHERE `users`.`id` = \'2\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `users`.`id` = :users.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(609): CodeIgniter\Model->doFind(true, '2')
+ 7 APPPATH\Controllers\Facility.php(249): CodeIgniter\BaseModel->find('2')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilitiesForUsers()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 13:12:35 --> Error: Class "App\Controllers\Services" not found
+[Method: POST, Route: inquiry/send]
+in APPPATH\Controllers\Inquiry.php on line 22.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 13:13:36 --> Error: Call to undefined function App\Controllers\sendEmailViaGmailAPI()
+[Method: POST, Route: inquiry/send]
+in APPPATH\Controllers\Inquiry.php on line 46.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Inquiry->sendMessage()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Inquiry))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2025-04-19 16:23:55 --> MailerSend error: Client error: `POST https://api.mailersend.com/v1/email` resulted in a `422 Unprocessable Entity` response:
+{"message":"The from.email domain must be verified in your account to send emails. #MS42207","errors":{"from.email":["Th (truncated...)
+
+ERROR - 2025-04-19 16:25:16 --> MailerSend error: Client error: `POST https://api.mailersend.com/v1/email` resulted in a `422 Unprocessable Entity` response:
+{"message":"The from.email domain must be verified in your account to send emails. #MS42207","errors":{"from.email":["Th (truncated...)
+
+ERROR - 2025-04-19 16:25:50 --> MailerSend error: Client error: `POST https://api.mailersend.com/v1/email` resulted in a `422 Unprocessable Entity` response:
+{"message":"The from.email domain must be verified in your account to send emails. #MS42207","errors":{"from.email":["Th (truncated...)
+
+ERROR - 2025-04-19 16:30:09 --> MailerSend error: Client error: `POST https://api.mailersend.com/v1/email` resulted in a `422 Unprocessable Entity` response:
+{"message":"The from.email domain must be verified in your account to send emails. #MS42207","errors":{"from.email":["Th (truncated...)
+
+CRITICAL - 2025-04-19 18:45:37 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: navigate]
+in APPPATH\Controllers\Navigate.php on line 9.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-19 18:46:14 --> Error: Class "App\Controllers\Services" not found
+[Method: GET, Route: navigate]
+in APPPATH\Controllers\Navigate.php on line 17.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -13,6 +13,7 @@ class Admin extends BaseController
     protected $currentName;
     protected $role;
     protected $rolename;
+    protected $sciSessionsModel;
 
     public function __construct()
     {
@@ -20,6 +21,8 @@ class Admin extends BaseController
         $this->userModel = new \App\Models\UserModel();
         // Instantiate the UserModel.
         $this->materialModel = new \App\Models\MaterialModel();
+
+        $this->sciSessionsModel = new \App\Models\SciSessionsModel();
     }
 
     /**
@@ -55,19 +58,39 @@ class Admin extends BaseController
     public function index()
     {
         $this->loadUserDetails();
+        $googlekey = getenv('GOOGLE_MAPS_API_KEY');
 
-        // Check if the user is logged in.
+        // Load models for counting
+        $facilityModel = new \App\Models\FacilityModel();
+        $userModel = new \App\Models\UserModel();
+
+        // Totals
+        $totalFacilities = $facilityModel->countAll();
+        $totalFacilitator = $userModel->where('roleID', 2)->countAllResults();
+        $totalUsers = $userModel->where('roleID', 3)->countAllResults();
+        $totalBlank = $userModel->where('roleID', 4)->countAllResults();
+        $title = "Dashboard";
+        // Check login
         if ($this->oauthId !== null) {
-            $output = view('shared/dashboard_header')
+            $output = view('shared/dashboard_header', ['title' => $title])
                 . view('shared/dashboard_sidenav', [
                     'role' => $this->role,
                     'current_name' => $this->currentName,
                     'rolename' => $this->rolename
                 ])
-                . view('admin/dashboard/index')
-                . view('shared/dashboard_footer');
+                . view('admin/dashboard/index', [
+                    'totalFacilities' => $totalFacilities,
+                    'totalFacilitator' => $totalFacilitator,
+                    'totalUsers' => $totalUsers,
+                    'totalBlank' => $totalBlank
+                ])
+                . view('shared/dashboard_footer', [
+                    'googlekey' => $googlekey
+                ]);
 
-            return $this->response->setStatusCode(200)->setBody($output);
+            return $this->response
+                ->setStatusCode(200)
+                ->setBody($output);
         } else {
             return redirect()->to(base_url("login/logout"));
         }
@@ -90,11 +113,10 @@ class Admin extends BaseController
 
         //fetch materials in MaterialModel
         $materials = $this->materialModel->getMaterials();
+        $title = "Manage Facilities";
 
         if ($this->oauthId !== null) {
-            $output = view('shared/dashboard_header', [
-                'googlekey' => $googlekey
-            ])
+            $output = view('shared/dashboard_header', ['title' => $title])
                 . view('shared/dashboard_sidenav', [
                     'role' => $this->role,
                     'current_name' => $this->currentName,
@@ -103,7 +125,9 @@ class Admin extends BaseController
                 . view('admin/facility/index', [
                     'materials' => $materials
                 ])
-                . view('shared/dashboard_footer');
+                . view('shared/dashboard_footer', [
+                    'googlekey' => $googlekey
+                ]);
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {
@@ -121,9 +145,9 @@ class Admin extends BaseController
     public function users()
     {
         $this->loadUserDetails();
-
+        $title = "Manage Users";
         if ($this->oauthId !== null) {
-            $output = view('shared/dashboard_header')
+            $output = view('shared/dashboard_header', ['title' => $title])
                 . view('shared/dashboard_sidenav', [
                     'role' => $this->role,
                     'current_name' => $this->currentName,
@@ -137,4 +161,70 @@ class Admin extends BaseController
             return redirect()->to(base_url("login/logout"));
         }
     }
+
+
+    public function recentSessions()
+    {
+        $sessM = new \App\Models\SciSessionsModel();
+        $allRows = $sessM->orderBy('timestamp', 'DESC')->findAll();
+
+        $perUser = [];
+        foreach ($allRows as $r) {
+            $decoded = $this->decodeSessionData($r['data']);
+
+            // who is this?
+            $uid = $decoded['LoggedUserData']['user_ID'] ?? null;
+            if (!$uid)
+                continue;
+
+            // grab the regenerate time instead of DB timestamp
+            $ts = (int) ($decoded['__ci_last_regenerate'] ?? $r['timestamp']);
+
+            // only keep the first (i.e. newest) entry per user
+            if (!isset($perUser[$uid])) {
+                $perUser[$uid] = [
+                    'email' => $decoded['LoggedUserData']['email'] ?? null,
+                    'previous_url' => $decoded['_ci_previous_url'] ?? null,
+                    'timestamp' => $ts,
+                ];
+            }
+        }
+
+        // now build + sort + limit
+        $list = [];
+        foreach ($perUser as $info) {
+            $list[] = [
+                'email' => $info['email'],
+                'previous_url' => $info['previous_url'],
+                'last_login' => date('Y-m-d H:i:s', $info['timestamp']),
+            ];
+        }
+        usort($list, fn($a, $b) => strcmp($b['last_login'], $a['last_login']));
+        $top5 = array_slice($list, 0, 5);
+
+        return $this->response
+            ->setStatusCode(200)
+            ->setJSON($top5);
+    }
+
+
+    /**
+     * Helper: safely decode a PHP session‑style blob.
+     */
+    private function decodeSessionData(string $blob): array
+    {
+        // back up any live session
+        $backup = $_SESSION ?? [];
+        $_SESSION = [];
+
+        // decode directly into $_SESSION
+        session_decode($blob);
+        $decoded = $_SESSION;
+
+        // restore
+        $_SESSION = $backup;
+        return $decoded;
+    }
+
+
 }

@@ -1,278 +1,156 @@
+<!-- Page content -->
+<div class="container-fluid mt--6">
+  <div class="row">
+    <div class="col-xl-12">
+      <div class="card ">
+        <div class="card-header bg-transparent ">
+          <div class="row align-items-center">
+            <div class="col">
+              <h6 class="text-muted text-uppercase ls-1 mb-1">Overview</h6>
+              <h5 class="h3 mb-0">Registered Facilities</h5>
+            </div>
+            <div class="col text-right ">
+              <a href="<?= base_url('facilitator/facility'); ?>" class=" btn btn-sm
+                btn-primary">View my facilities</a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body p-0">
+          <div id="map" class="map-canvas position-relative" style="height:500px;max-height:800px;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Page content -->
-    <div class="container-fluid mt--6">
-      <div class="row">
-        <div class="col-xl-8">
-          <div class="card bg-default">
-            <div class="card-header bg-transparent">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h6 class="text-light text-uppercase ls-1 mb-1">Overview</h6>
-                  <h5 class="h3 text-white mb-0">Sales value</h5>
-                </div>
-                <div class="col">
-                  <ul class="nav nav-pills justify-content-end">
-                    <li class="nav-item mr-2 mr-md-0" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 10, 30, 15, 40, 20, 60, 60]}]}}' data-prefix="$" data-suffix="k">
-                      <a href="#" class="nav-link py-2 px-3 active" data-toggle="tab">
-                        <span class="d-none d-md-block">Month</span>
-                        <span class="d-md-none">M</span>
-                      </a>
-                    </li>
-                    <li class="nav-item" data-toggle="chart" data-target="#chart-sales-dark" data-update='{"data":{"datasets":[{"data":[0, 20, 5, 25, 10, 30, 15, 40, 40]}]}}' data-prefix="$" data-suffix="k">
-                      <a href="#" class="nav-link py-2 px-3" data-toggle="tab">
-                        <span class="d-none d-md-block">Week</span>
-                        <span class="d-md-none">W</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <!-- Chart -->
-              <div class="chart">
-                <!-- Chart wrapper -->
-                <canvas id="chart-sales-dark" class="chart-canvas"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="card">
-            <div class="card-header bg-transparent">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h6 class="text-uppercase text-muted ls-1 mb-1">Performance</h6>
-                  <h5 class="h3 mb-0">Total orders</h5>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <!-- Chart -->
-              <div class="chart">
-                <canvas id="chart-bars" class="chart-canvas"></canvas>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-xl-8">
-          <div class="card">
-            <div class="card-header border-0">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Page visits</h3>
-                </div>
-                <div class="col text-right">
-                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
-                </div>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <!-- Projects table -->
-              <table class="table align-items-center table-flush">
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col">Page name</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col">Unique users</th>
-                    <th scope="col">Bounce rate</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      /dashboard/
-                    </th>
-                    <td>
-                      4,569
-                    </td>
-                    <td>
-                      340
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-up text-success mr-3"></i> 46,53%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /dashboard/index.html
-                    </th>
-                    <td>
-                      3,985
-                    </td>
-                    <td>
-                      319
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-down text-warning mr-3"></i> 46,53%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /dashboard/charts.html
-                    </th>
-                    <td>
-                      3,513
-                    </td>
-                    <td>
-                      294
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-down text-warning mr-3"></i> 36,49%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /dashboard/tables.html
-                    </th>
-                    <td>
-                      2,050
-                    </td>
-                    <td>
-                      147
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-up text-success mr-3"></i> 50,87%
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      /dashboard/profile.html
-                    </th>
-                    <td>
-                      1,795
-                    </td>
-                    <td>
-                      190
-                    </td>
-                    <td>
-                      <i class="fas fa-arrow-down text-danger mr-3"></i> 46,53%
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-4">
-          <div class="card">
-            <div class="card-header border-0">
-              <div class="row align-items-center">
-                <div class="col">
-                  <h3 class="mb-0">Social traffic</h3>
-                </div>
-                <div class="col text-right">
-                  <a href="#!" class="btn btn-sm btn-primary">See all</a>
-                </div>
-              </div>
-            </div>
-            <div class="table-responsive">
-              <!-- Projects table -->
-              <table class="table align-items-center table-flush">
-                <thead class="thead-light">
-                  <tr>
-                    <th scope="col">Referral</th>
-                    <th scope="col">Visitors</th>
-                    <th scope="col"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">
-                      Facebook
-                    </th>
-                    <td>
-                      1,480
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="mr-2">60%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-danger" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      Facebook
-                    </th>
-                    <td>
-                      5,480
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="mr-2">70%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      Google
-                    </th>
-                    <td>
-                      4,807
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="mr-2">80%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      Instagram
-                    </th>
-                    <td>
-                      3,678
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="mr-2">75%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-info" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th scope="row">
-                      twitter
-                    </th>
-                    <td>
-                      2,645
-                    </td>
-                    <td>
-                      <div class="d-flex align-items-center">
-                        <span class="mr-2">30%</span>
-                        <div>
-                          <div class="progress">
-                            <div class="progress-bar bg-gradient-warning" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      
+
+</div>
+
+
+<script>
+  // Globals
+  let map, infoWindow;
+  let directionsService, directionsRenderer;
+
+  /**
+   * Google's callback for script loading.
+   * First tries to get browser geolocation, then initializes the map.
+   */
+  window.initMap = () => {
+    // 1) get user location (or fallback) then init
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        ({ coords }) => initializeMap(coords.latitude, coords.longitude),
+        () => initializeMap() // fallback
+      );
+    } else {
+      initializeMap(); // no geolocation support
+    }
+  };
+
+  /**
+   * Initialize the Google map with given or default coords.
+   */
+  function initializeMap(lat = 14.5995, lng = 120.9842) {
+    map = new google.maps.Map(document.getElementById("map"), {
+      center: { lat, lng },
+      zoom: 12,
+      disableDefaultUI: true,
+      mapTypeControl: false,
+      fullscreenControl: false,
+      styles: [
+        { featureType: "poi", elementType: "labels.icon", stylers: [{ visibility: "off" }] },
+        { featureType: "poi.business", stylers: [{ visibility: "off" }] },
+        { featureType: "transit", stylers: [{ visibility: "off" }] },
+        { featureType: "administrative", elementType: "labels.icon", stylers: [{ visibility: "off" }] }
+      ]
+    });
+
+    // 3) prepare a single InfoWindow and Directions objects
+    infoWindow = new google.maps.InfoWindow();
+    directionsService = new google.maps.DirectionsService();
+    directionsRenderer = new google.maps.DirectionsRenderer({
+      suppressMarkers: false,      // show default markers for route endpoints
+      polylineOptions: {           // style of the route line
+        strokeColor: '#4285F4',
+        strokeWeight: 5
+      }                            // <-- use } here, not ]
+    });
+    // start with no map attached; will attach when route is drawn
+    directionsRenderer.setMap(null);
+
+    // clear route when InfoWindow closes
+    google.maps.event.addListener(infoWindow, 'closeclick', () => {
+      directionsRenderer.setMap(null);
+    });
+
+    loadFacilityMarkers();
+  }
+
+
+  /**
+   * Fetches facility list and drops markers + infowindows.
+   */
+  function loadFacilityMarkers() {
+    axios.get('<?= base_url("facility/list") ?>')
+      .then(({ data }) => {
+        data.forEach(f => {
+          const pos = {
+            lat: parseFloat(f.location.lat),
+            lng: parseFloat(f.location.lng)
+          };
+          const marker = new google.maps.Marker({ position: pos, map });
+
+          // build your info-window HTML, with a "Navigate" button
+          const badges = f.tags.map(t =>
+            `<span class="badge bg-primary me-1 text-white">${t.Material || t.name}</span>`
+          ).join('');
+          const content = `
+            <div style="min-width:220px">
+              <h3>${f.name}</h3>
+              <p class="m-0">${f.Description}</p>
+              <p class="m-0"><strong>Hours:</strong> ${f.BusinessHours}</p>
+              <p>${badges}</p>
+              <button id="nav-btn" class="btn btn-sm btn-success mt-2">
+                Navigate
+              </button>
+            </div>`;
+
+          marker.addListener('click', () => {
+            infoWindow.setContent(content);
+            infoWindow.open(map, marker);
+
+            // once the DOM is in the page, hook the Navigate button
+            google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
+              document.getElementById('nav-btn').addEventListener('click', () => {
+                // get current location again (in case user moved)
+                if (navigator.geolocation) {
+                  navigator.geolocation.getCurrentPosition(
+                    ({ coords }) => {
+                      // draw route from current pos → marker pos
+                      directionsService.route({
+                        origin: { lat: coords.latitude, lng: coords.longitude },
+                        destination: pos,
+                        travelMode: 'DRIVING'
+                      }, (result, status) => {
+                        if (status === 'OK') {
+                          directionsRenderer.setDirections(result);
+                          directionsRenderer.setMap(map);
+                        } else {
+                          alert('Directions request failed due to ' + status);
+                        }
+                      });
+                    },
+                    () => alert('Unable to retrieve your location')
+                  );
+                } else {
+                  alert('Geolocation not supported by your browser');
+                }
+              });
+            });
+          });
+        });
+      })
+      .catch(err => console.error("Couldn't load facilities:", err));
+  }
+
+</script>

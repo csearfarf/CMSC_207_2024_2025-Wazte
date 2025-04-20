@@ -9,29 +9,30 @@ use Config\Services;
 class Login extends BaseController
 {
 
-    private $userModel=NULL;
-	private $googleClient=NULL;
-	function __construct(){
+    private $userModel = NULL;
+    private $googleClient = NULL;
+    function __construct()
+    {
 
-		$this->userModel = new \App\Models\UserModel();
+        $this->userModel = new \App\Models\UserModel();
         $this->googleClient = new \Google_Client();
 
         // Retrieve Google API credentials from the environment.
         // Make sure these variables are defined in your .env file.
-        $clientId     = env('GOOGLE_CLIENT_ID');
+        $clientId = env('GOOGLE_CLIENT_ID');
         $clientSecret = env('GOOGLE_CLIENT_SECRET');
-        $redirectUri  = env('GOOGLE_DEFAULT_REDIRECT_URI');
+        $redirectUri = env('GOOGLE_DEFAULT_REDIRECT_URI');
 
         // Set up the Google Client with the environment variables.
         $this->googleClient->setClientId($clientId);
         $this->googleClient->setClientSecret($clientSecret);
         $this->googleClient->setRedirectUri($redirectUri);
 
-		$this->googleClient->addScope("email");
-		$this->googleClient->addScope("profile");
+        $this->googleClient->addScope("email");
+        $this->googleClient->addScope("profile");
 
-	}
-	/**
+    }
+    /**
      * Main entry point for login.
      *
      * If the user is already logged in (as determined by session data), this method
@@ -59,12 +60,12 @@ class Login extends BaseController
             }
         } else {
             // Prepare data for the login view, including the Google login button.
-            $data['googleButton'] = '<a href="'.$this->googleClient->createAuthUrl().'" class="btn btn-md btn-docs btn-outline-white animate-up-2 mr-3"><i class="fas fa-fingerprint mr-2"></i>Login</a>';
+            $data['googleButton'] = '<a href="' . $this->googleClient->createAuthUrl() . '" class="btn btn-md btn-docs btn-outline-white animate-up-2 mr-3"><i class="fas fa-fingerprint mr-2"></i>Login</a>';
 
             // Build the output HTML using concatenated views.
-            $output = view('shared/index_header') 
-                    . view('welcome_message', $data) 
-                    . view('shared/index_footer');
+            $output = view('shared/index_header')
+                . view('welcome_message', $data)
+                . view('shared/index_footer');
 
             // Return the HTML output.
             return $output;
@@ -87,10 +88,20 @@ class Login extends BaseController
             return redirect()->to(base_url());
         }
 
-        // Build the output HTML with header, user type view and footer.
-        $output = view('shared/index_header') 
-                . view('login/usertype') 
+        // Get user role and redirect accordingly.
+        $loggedUser = session()->get("LoggedUserData");
+        $role = $this->userModel->getUserRole($loggedUser['oauth_id']);
+
+        if ($role != '3') {
+            // Build the output HTML with header, user type view and footer.
+            $output = view('shared/index_header')
+                . view('login/usertype')
                 . view('shared/index_footer');
+
+        } else {
+            return redirect()->to(base_url("navigate"));
+        }
+
 
         return $output;
     }
@@ -130,21 +141,21 @@ class Login extends BaseController
             if ($this->userModel->isAlreadyRegister($data['id'])) {
                 // If the user is already registered, update their data.
                 $userdata = [
-                    'oauth_id'    => $data['id'],
+                    'oauth_id' => $data['id'],
                     //'name'        => $data['givenName'] . " " . $data['familyName'],
-                    'email'       => $data['email'],
+                    'email' => $data['email'],
                     'profile_img' => $data['picture'],
-                    'updated_at'  => $currentDateTime
+                    'updated_at' => $currentDateTime
                 ];
                 $this->userModel->updateUserData($userdata, $data['id']);
             } else {
                 // Otherwise, insert new user data.
                 $userdata = [
-                    'oauth_id'    => $data['id'],
-                    'name'        => $data['givenName'] . " " . $data['familyName'],
-                    'email'       => $data['email'],
+                    'oauth_id' => $data['id'],
+                    'name' => $data['givenName'] . " " . $data['familyName'],
+                    'email' => $data['email'],
                     'profile_img' => $data['picture'],
-                    'created_at'  => $currentDateTime
+                    'created_at' => $currentDateTime
                 ];
                 $this->userModel->insertUserData($userdata);
             }
@@ -155,13 +166,13 @@ class Login extends BaseController
             if ($existingUser) {
                 // Manually populate each piece of session data from the existing user array.
                 $sessionData = [];
-                $sessionData['user_ID']    = $existingUser['user_ID'];
-                $sessionData['oauth_id']   = $data['id'];
-                $sessionData['name']       = $existingUser['Name']; // Or $existingUser['Name'] if that is your key.
-                $sessionData['email']      = $existingUser['Email'];
-                $sessionData['profile_img']= $existingUser['profile_img'];
-                $sessionData['roleID']     = $existingUser['roleID'];
-                
+                $sessionData['user_ID'] = $existingUser['user_ID'];
+                $sessionData['oauth_id'] = $data['id'];
+                $sessionData['name'] = $existingUser['Name']; // Or $existingUser['Name'] if that is your key.
+                $sessionData['email'] = $existingUser['Email'];
+                $sessionData['profile_img'] = $existingUser['profile_img'];
+                $sessionData['roleID'] = $existingUser['roleID'];
+
                 // Save the manually populated user data to the session.
                 session()->set("LoggedUserData", $sessionData);
 
@@ -172,7 +183,7 @@ class Login extends BaseController
             }
 
 
-            
+
         } else {
             // In case of token error, set flash message and redirect to welcome.
             session()->setFlashData("Error", "Something went wrong: " . $token['error_description']);
@@ -221,7 +232,7 @@ class Login extends BaseController
             case 2:
                 return redirect()->to(base_url("facilitator"));
             case 3:
-                return redirect()->to(base_url("user"));
+                return redirect()->to(base_url("navigate"));
             case 4:
                 return redirect()->to(base_url("login/chooseusertype"));
             default:
@@ -247,7 +258,7 @@ class Login extends BaseController
         $session = Services::session();
 
         // Sanitize the choice parameter: cast to string and trim whitespace.
-        $choice = trim((string)$choice);
+        $choice = trim((string) $choice);
 
         // Prepare the data array and set the validation rules.
         $data = ['choice' => $choice];
@@ -264,11 +275,11 @@ class Login extends BaseController
 
             // Since this request is expected to be AJAX (Axios), return a JSON response with status 400.
             return $this->response
-                        ->setStatusCode(400)
-                        ->setJSON([
-                            'status'  => 'error',
-                            'message' => $errorMessage
-                        ]);
+                ->setStatusCode(400)
+                ->setJSON([
+                    'status' => 'error',
+                    'message' => $errorMessage
+                ]);
         }
 
         // Get the logged user details.
@@ -283,57 +294,58 @@ class Login extends BaseController
                 // Determine redirection URL based on the validated choice.
                 // as facilitator into role = 2 
                 if ($choice === '1') {
-                    
+
                     $currentDateTime = date("Y-m-d H:i:s");
                     $redirectUrl = base_url("facilitator"); // Modify URL as needed.
                     $userdata = [
-                        'roleID'    => "2",
-                        'updated_at'  => $currentDateTime
+                        'roleID' => "2",
+                        'updated_at' => $currentDateTime
                     ];
-                    $this->userModel->updateUserData($userdata,   $oauthId);
+                    $this->userModel->updateUserData($userdata, $oauthId);
 
 
-                } else { 
+                } else {
                     // $choice === '0'
                     // as user into role = 3 
                     $currentDateTime = date("Y-m-d H:i:s");
-                    $redirectUrl = base_url("user"); // Modify URL as needed.
+                    $redirectUrl = base_url("navigate"); // Modify URL as needed.
                     $userdata = [
-                        'roleID'    => "3",
-                        'updated_at'  => $currentDateTime
+                        'roleID' => "3",
+                        'updated_at' => $currentDateTime
                     ];
-                    $this->userModel->updateUserData($userdata,   $oauthId);
+                    $this->userModel->updateUserData($userdata, $oauthId);
                 }
 
-                
+
                 return $this->response->setStatusCode(200)
-                ->setJSON([
-                    'status'      => 'success',
-                    'redirectUrl' => $redirectUrl
-                ]);
+                    ->setJSON([
+                        'status' => 'success',
+                        'redirectUrl' => $redirectUrl
+                    ]);
             } else {
                 // Build an unauthorized error page.
                 $output = view('shared/index_header')
-                        . view('errors/unauthorized') 
-                        . view('shared/index_footer');
+                    . view('errors/unauthorized')
+                    . view('shared/index_footer');
 
                 return $this->response->setStatusCode(401)->setBody($output);
             }
         } else {
             // Build an unauthorized error page for missing user data.
             $output = view('shared/index_header')
-                    . view('errors/unauthorized') 
-                    . view('shared/index_footer');
+                . view('errors/unauthorized')
+                . view('shared/index_footer');
 
             return $this->response->setStatusCode(401)->setBody($output);
         }
     }
 
 
-    public function dump(){
-            // Alternatively, use var_dump:
-            var_dump(session()->get("LoggedUserData"));
-            return;
+    public function dump()
+    {
+        // Alternatively, use var_dump:
+        var_dump(session()->get("LoggedUserData"));
+        return;
     }
 
 

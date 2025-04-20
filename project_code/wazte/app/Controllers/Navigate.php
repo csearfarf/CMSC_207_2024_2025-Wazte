@@ -1,14 +1,31 @@
 <?php
 
 namespace App\Controllers;
+use Config\Services;
 
 class Navigate extends BaseController
 {
+    private $userModel = NULL;
+    protected $loggedUser;
+
+    function __construct()
+    {
+
+        $this->userModel = new \App\Models\UserModel();
+
+    }
     public function index(): string
     {
-        $googlekey =  getenv('GOOGLE_MAPS_API_KEY');
-        return view('navigate',[
-            'googlekey'         => $googlekey
+
+        $session = Services::session();
+        $this->loggedUser = $session->get("LoggedUserData");
+        $oauthId = isset($this->loggedUser['oauth_id']) ? $this->loggedUser['oauth_id'] : null;
+        $googlekey = getenv('GOOGLE_MAPS_API_KEY');
+        $role = $this->userModel->getUserRole($oauthId);
+        return view('navigate', [
+            'googlekey' => $googlekey,
+            'loggedUser' => $this->loggedUser,
+            'role' => $role
         ]);
     }
 
@@ -35,7 +52,7 @@ class Navigate extends BaseController
         $materials = $model->getMaterials();
         return $this->response->setJSON($materials);
     }
-    
+
 
 
 }

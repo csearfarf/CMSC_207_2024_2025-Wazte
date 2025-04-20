@@ -257,3 +257,78 @@ in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
 12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
 13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 22:31:44 --> ErrorException: Undefined array key "dateadded"
+[Method: GET, Route: facility/list]
+in APPPATH\Controllers\Facility.php on line 122.
+ 1 APPPATH\Controllers\Facility.php(122): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dateadded"', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facility.php', 122)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilities()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 22:32:11 --> ErrorException: Undefined array key "facilitytags_ID"
+[Method: GET, Route: facility/list]
+in APPPATH\Controllers\Facility.php on line 135.
+ 1 APPPATH\Controllers\Facility.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "facilitytags_ID"', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facility.php', 135)
+ 2 [internal function]: App\Controllers\Facility->App\Controllers\{closure}([...])
+ 3 APPPATH\Controllers\Facility.php(134): array_map(Object(Closure), [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilities()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 22:42:05 --> Error: Class "App\Controllers\App\Models\FacilityModel" not found
+[Method: GET, Route: facility/list]
+in APPPATH\Controllers\Facility.php on line 94.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilities()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 22:42:41 --> ErrorException: Undefined array key "facilitytags_ID"
+[Method: GET, Route: facility/list]
+in APPPATH\Controllers\Facility.php on line 115.
+ 1 APPPATH\Controllers\Facility.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "facilitytags_ID"', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facility.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilities()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 22:42:50 --> ErrorException: Undefined array key "facilitytags_ID"
+[Method: GET, Route: facility/list]
+in APPPATH\Controllers\Facility.php on line 115.
+ 1 APPPATH\Controllers\Facility.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "facilitytags_ID"', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facility.php', 115)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilities()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 22:43:18 --> ErrorException: Undefined array key "dateadded"
+[Method: GET, Route: facility/list]
+in APPPATH\Controllers\Facility.php on line 125.
+ 1 APPPATH\Controllers\Facility.php(125): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "dateadded"', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Controllers\\Facility.php', 125)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facility->listFacilities()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facility))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-18 23:58:09 --> ErrorException: Undefined variable $googlekey
+[Method: GET, Route: admin]
+in APPPATH\Views\shared\dashboard_header.php on line 59.
+ 1 APPPATH\Views\shared\dashboard_header.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $googlekey', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php', 59)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_header', [], true)
+ 5 APPPATH\Controllers\Admin.php(61): view('shared/dashboard_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

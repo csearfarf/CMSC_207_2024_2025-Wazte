@@ -26,6 +26,12 @@
 <script src="<?= base_url('public/dashboard/assets/vendor/datatables.net-buttons/js/buttons.flash.min.js') ?>"></script>
 <script src="<?= base_url('public/dashboard/assets/vendor/datatables.net-buttons/js/buttons.print.min.js') ?>"></script>
 
+<?php if (service('uri')->getSegment(2) == "facility" || service('uri')->getSegment(2) == "" || service('uri')->getSegment(2) == "/facilitator"): ?>
+
+  <!-- Google Maps -->
+  <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=<?= $googlekey ?>&libraries=places&callback=initMap"></script>
+<?php endif; ?>
 
 </body>
 

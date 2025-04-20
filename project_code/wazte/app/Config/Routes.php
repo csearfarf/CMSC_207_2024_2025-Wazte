@@ -25,6 +25,8 @@ $routes->group('admin', ['filter' => 'roleCheck:1'], function ($routes) {
     $routes->delete('users/remove/(:num)', 'Users::deleteUser/$1'); //deletes user
     $routes->get('users/view/(:num)', 'Users::viewUser/$1'); //view specific user
     $routes->post('users/update', 'Users::updateUser'); // update user endpoint
+
+    $routes->get('dashboard/recent', 'Admin::recentSessions');
 });
 
 $routes->group('facilitator', ['filter' => 'roleCheck:2'], function ($routes) {
@@ -44,22 +46,32 @@ $routes->get('/login/chooseusertype', 'Login::chooseUserType');
 $routes->get('/login/chooseType/(:num)', 'Login::chooseType/$1');
 
 
-
-// Facilitator Authenticated role route list  
-$routes->group('navigate', ['filter' => 'roleCheck:4'], function ($routes) {
+//  Authenticated role route list  for user and none role
+$routes->group('navigate', ['filter' => 'roleCheck:3,4'], function ($routes) {
     $routes->get('/', 'Navigate::index');
     $routes->get('index', 'Navigate::index');
     $routes->get('materialTypes', 'Navigate::materialTypes');
-
+    $routes->get('wazteList', 'Facility::listFacilitiesForUsers'); //list facilities
 });
 
 // Facility functio with role 1 & 2 
 
 $routes->group('facility', ['filter' => 'roleCheck:1,2'], function ($routes) {
-    // New POST endpoint for saving
-    $routes->post('saveNewfacility', 'Facility::createNewFacility');
+
+    $routes->post('saveNewfacility', 'Facility::createNewFacility'); //save facility
+    $routes->get('list', 'Facility::listFacilities'); //list facilities
+    $routes->get('select/(:num)', 'Facility::selectFacility/$1'); // Get one by ID
+    $routes->post('saveEditFacility', 'Facility::saveEditFacility'); // save updated data of facility
+    $routes->post('delete/(:num)', 'Facility::deleteFacility/$1');
+
+
 });
 
+
+//inquiry
+$routes->group('inquiry', ['filter' => 'roleCheck:3'], function ($routes) {
+    $routes->post('send', 'Inquiry::sendMessage');
+});
 
 
 

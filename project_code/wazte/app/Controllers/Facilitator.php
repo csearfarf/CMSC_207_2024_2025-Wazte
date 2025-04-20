@@ -13,10 +13,14 @@ class Facilitator extends BaseController
     protected $role;
     protected $rolename;  // Human readable role name
 
+    protected $materialModel;
+
+
     public function __construct()
     {
         // Instantiate the UserModel.
         $this->userModel = new \App\Models\UserModel();
+        $this->materialModel = new \App\Models\MaterialModel();
     }
 
     /**
@@ -31,8 +35,8 @@ class Facilitator extends BaseController
     private function loadUserDetails(): void
     {
         $session = Services::session();
-        $this->loggedUser  = $session->get("LoggedUserData");
-        $this->oauthId     = isset($this->loggedUser['oauth_id']) ? $this->loggedUser['oauth_id'] : null;
+        $this->loggedUser = $session->get("LoggedUserData");
+        $this->oauthId = isset($this->loggedUser['oauth_id']) ? $this->loggedUser['oauth_id'] : null;
         $this->currentName = isset($this->loggedUser['name']) ? $this->loggedUser['name'] : null;
 
         if ($this->oauthId !== null) {
@@ -53,16 +57,22 @@ class Facilitator extends BaseController
     public function index()
     {
         $this->loadUserDetails();
-
+        $uri = service('uri')->getPath();
+        $googlekey = getenv('GOOGLE_MAPS_API_KEY');
+        $title = "Dashboard";
         if ($this->oauthId !== null) {
-            $output = view('shared/dashboard_header')
-                    . view('shared/dashboard_sidenav', [
-                        'role'         => $this->role,
-                        'current_name' => $this->currentName,
-                        'rolename'     => $this->rolename
-                    ])
-                    . view('facilitator/dashboard/index')
-                    . view('shared/dashboard_footer');
+            $output = view('shared/dashboard_header', ['title' => $title])
+                . view('shared/dashboard_sidenav', [
+                    'role' => $this->role,
+                    'current_name' => $this->currentName,
+                    'uri' => $uri,
+                    'rolename' => $this->rolename
+
+                ])
+                . view('facilitator/dashboard/index')
+                . view('shared/dashboard_footer', [
+                    'googlekey' => $googlekey
+                ]);
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {
@@ -71,26 +81,38 @@ class Facilitator extends BaseController
     }
 
     /**
-     * Facilitator Facility Page.
+     * Display the Facility page.
      *
-     * Loads common header, sidenav (passing role, current name, and role name), 
-     * facility content, and footer views.
+     * Loads common header, sidenav, facility content, and footer views.
      *
      * @return \CodeIgniter\HTTP\Response|string
      */
     public function facility()
     {
+
+        $googlekey = getenv('GOOGLE_MAPS_API_KEY');
+
         $this->loadUserDetails();
 
+
+        //fetch materials in MaterialModel
+        $materials = $this->materialModel->getMaterials();
+        $title = "Manage Facility";
+
         if ($this->oauthId !== null) {
-            $output = view('shared/dashboard_header')
-                    . view('shared/dashboard_sidenav', [
-                        'role'         => $this->role,
-                        'current_name' => $this->currentName,
-                        'rolename'     => $this->rolename
-                    ])
-                    . view('facilitator/facility/index')
-                    . view('shared/dashboard_footer');
+            $output = view('shared/dashboard_header', [
+                'googlekey' => $googlekey,
+                'title' => $title
+            ])
+                . view('shared/dashboard_sidenav', [
+                    'role' => $this->role,
+                    'current_name' => $this->currentName,
+                    'rolename' => $this->rolename
+                ])
+                . view('facilitator/facility/index', [
+                    'materials' => $materials
+                ])
+                . view('shared/dashboard_footer');
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {
@@ -114,13 +136,13 @@ class Facilitator extends BaseController
 
         if ($this->oauthId !== null) {
             $output = view('shared/dashboard_header')
-                    . view('shared/dashboard_sidenav', [
-                        'role'         => $this->role,
-                        'current_name' => $this->currentName,
-                        'rolename'     => $this->rolename
-                    ])
-                    . view('facilitator/inquiries/index')
-                    . view('shared/dashboard_footer');
+                . view('shared/dashboard_sidenav', [
+                    'role' => $this->role,
+                    'current_name' => $this->currentName,
+                    'rolename' => $this->rolename
+                ])
+                . view('facilitator/inquiries/index')
+                . view('shared/dashboard_footer');
 
             return $this->response->setStatusCode(200)->setBody($output);
         } else {

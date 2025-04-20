@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Wazte Dashboard</title>
+  <title>Wazte |
+    <?= $title ?>
+  </title>
 
   <!-- Favicon -->
-  <link rel="icon" href="<?= base_url('public/front/assets/img/favicon/favicon.png') ?>" type="image/png">
+  <link rel="icon" href="<?= base_url('public/wazte_logo_icon.png') ?>" type="image/png">
+
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->
@@ -27,7 +30,7 @@
 
 
 
-  <?php if (service('uri')->getSegment(2) == "facility"): ?>
+  <?php if (service('uri')->getSegment(2) == "facility" || service('uri')->getSegment(2) == "" || service('uri')->getSegment(2) == "/facilitator"): ?>
 
     <style>
       /* ensure the autocomplete dropdown floats above the modal */
@@ -53,10 +56,6 @@
       }
     </style>
 
-
-    <!-- Google Maps -->
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=<?= $googlekey ?>&libraries=places&callback=initMap"></script>
 
 
     <!-- Select2 CSS -->

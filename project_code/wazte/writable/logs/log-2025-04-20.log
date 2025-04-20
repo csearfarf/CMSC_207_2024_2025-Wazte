@@ -1,0 +1,434 @@
+CRITICAL - 2025-04-20 10:49:29 --> ErrorException: Undefined variable $loggedUser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 236.
+ 1 APPPATH\Views\navigate.php(236): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedUser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 236)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:51:00 --> ErrorException: Undefined variable $loggedUser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedUser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:51:12 --> ErrorException: Undefined variable $loggedUser
+[Method: GET, Route: navigate/index]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedUser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:51:17 --> ErrorException: Undefined variable $loggedUser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedUser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:52:28 --> ErrorException: Undefined variable $user_name
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:52:49 --> ErrorException: Undefined variable $user_name
+[Method: GET, Route: navigate/index]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:52:49 --> ErrorException: Undefined variable $user_name
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:52:53 --> ErrorException: Undefined variable $user_name
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:53:29 --> ErrorException: Undefined variable $user_name
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(23): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:57:55 --> ErrorException: Undefined variable $loggedUser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggedUser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(24): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 10:59:20 --> ErrorException: Undefined variable $loggeduser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggeduser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(24): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:01:46 --> ErrorException: Undefined variable $loggeduser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggeduser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:01 --> ErrorException: Undefined variable $loggeduser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggeduser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:02 --> ErrorException: Undefined variable $loggeduser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggeduser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:03 --> ErrorException: Undefined variable $loggeduser
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $loggeduser', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:42 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:03:43 --> ErrorException: Undefined variable $oauthId
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $oauthId', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 11:05:02 --> ErrorException: Array to string conversion
+[Method: GET, Route: navigate]
+in APPPATH\Views\navigate.php on line 237.
+ 1 APPPATH\Views\navigate.php(237): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php', 237)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\navigate.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('navigate', [], true)
+ 5 APPPATH\Controllers\Navigate.php(26): view('navigate', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Navigate->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Navigate))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 23:51:04 --> ErrorException: Undefined variable $title
+[Method: GET, Route: admin/users]
+in APPPATH\Views\shared\dashboard_header.php on line 7.
+ 1 APPPATH\Views\shared\dashboard_header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_header', [], true)
+ 5 APPPATH\Controllers\Admin.php(149): view('shared/dashboard_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->users()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 23:51:51 --> ErrorException: Undefined variable $title
+[Method: GET, Route: admin/users]
+in APPPATH\Views\shared\dashboard_header.php on line 7.
+ 1 APPPATH\Views\shared\dashboard_header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_header', [], true)
+ 5 APPPATH\Controllers\Admin.php(149): view('shared/dashboard_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->users()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 23:52:07 --> ErrorException: Undefined variable $title
+[Method: GET, Route: admin/users]
+in APPPATH\Views\shared\dashboard_header.php on line 7.
+ 1 APPPATH\Views\shared\dashboard_header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_header', [], true)
+ 5 APPPATH\Controllers\Admin.php(149): view('shared/dashboard_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Admin->users()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-04-20 23:54:47 --> ErrorException: Undefined variable $title
+[Method: GET, Route: facilitator]
+in APPPATH\Views\shared\dashboard_header.php on line 7.
+ 1 APPPATH\Views\shared\dashboard_header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\207\\project_code\\wazte\\app\\Views\\shared\\dashboard_header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('shared/dashboard_header', [], true)
+ 5 APPPATH\Controllers\Facilitator.php(63): view('shared/dashboard_header')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Facilitator->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Facilitator))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
