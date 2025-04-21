@@ -65,9 +65,19 @@ $(document).ready(function () {
         message: message
       };
 
+          // Show loading alert
+          Swal.fire({
+            title: 'One sec…',
+            html: 'We’re sending your inquiry now!',
+            allowOutsideClick: false,
+            didOpen: () => {
+              Swal.showLoading();
+            }
+          });
       axios.post( baseurl+'inquiry/send', formData)
         .then(function (response) {
           if (response.data.success) {
+            Swal.close();
             Swal.fire({
               icon: 'success',
               title: 'Sent!',
