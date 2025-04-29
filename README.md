@@ -27,9 +27,12 @@ WAZTE is an online platform designed to foster responsible waste management and 
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 
-- [Mysql](https://www.mysql.com/) - Database
-- [Codeigniter 4](https://codeigniter.com/user_guide/intro/index.html) - Codeigniter 4
-- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - UI/UX
+- Frontend: Responsive web application (HTML5, CSS3, JavaScript, jQuery, Axios, Bootstrap 5)
+- Backend: Codeigniter 4
+- Database: Relational database (MYSQL) to store users, facilities, schedules, inquiries
+- Map Integration: Google Maps JavaScript API for interactive geolocation and markers
+- Authentication: Google OAuth 2.0 for secure  and frictionless user sign‐in
+- Mailer Service: SMTP or third‐party (e.g., SendGrid) for handling inquiries
 
 ## ✍️ Authors <a name = "authors"></a>
 
