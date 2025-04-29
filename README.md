@@ -2,7 +2,7 @@
 
 <div align="center">
   <img width=700px height=400px src="https://github.com/csearfarf/CMSC_207_2024_2025-Wazte/blob/main/project_code/wazte/public/front.png" alt="Overview">
-  <img width=700px height=400px src="https://github.com/csearfarf/CMSC_207_2024_2025-Wazte/blob/main/project_code/wazte/public/front/assets/img/front_logo.png" alt="Overview">
+  <img width=400px height=100px src="https://github.com/csearfarf/CMSC_207_2024_2025-Wazte/blob/main/project_code/wazte/public/front/assets/img/front_logo.png" alt="Overview">
 </div>
 
 ---
